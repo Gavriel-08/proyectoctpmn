@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_personal.css">
+    <title>Login - CTP Mercedes Norte</title>
+</head>
+<body class="body-login">
+
+<form action="login.php" method="POST">
+    <img src="img/logo mejorado 1.png" class="logo">
+    
+    <label>Correo:</label>
+    <input type="text" name="email" class="id" required><br><br>
+    <label>Contraseña:</label>
+    <input type="password" class="pass" name="pass" required><br><br>
+    <select id="rol" name="rol" required>
+        <option value="" disabled selected hidden>Rol</option>
+        <option value="admin">Administrativo</option>
+        <option value="profesor">Profesor</option>
+    </select>
+    
+    <input type="submit" value="enviar" class="ingresar">
+</form>
+</body>
+</html>
+

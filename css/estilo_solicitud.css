@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f8f0eb;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    border-bottom: 4px solid #7c2c2c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav{
+    width: 100vw;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    position: relative;
+    margin-top: 40px;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #7c2c2c;
+}
+
+.logo{
+    position: relative;
+    text-align: left;
+    width: 8rem;
+}
+
+/* Formulario principal */
+.all{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 30px auto 30px auto;
+    padding: 30px 30px 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+    font-size: 29px;
+    font-family: 'Georgia',sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+hr{
+    border: #efe4da solid 2px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.general {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.space {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.space-inline {
+    flex-direction: row;
+}
+
+.space-inline > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkbox {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox label {
+    margin-right: 10px;
+}
+.checkbox input[type="radio"] {
+    margin-right: 5px;
+}
+
+.fill {
+    background-color: #f2eaea;
+    width: 68%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 10px 12px 0;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+.fill-small {
+    background-color: #f2eaea;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+.fill-smaller{
+    background-color: #f2eaea;
+    width: 400%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+input[type="date"], input[type="time"], input[type="number"] {
+    background-color: #f2eaea;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 6px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="number"]:focus {
+    outline: 2px solid #7c2c2c;
+    background-color: #fff;
+}
+
+/* Tabla de motivos */
+.tablas {
+    margin: 30px 0 20px 0;
+}
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.tabla td {
+    padding: 10px 8px;
+
+    font-size: 15px;
+}
+
+.pepe {
+    width: 100%;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.checkbox-conv {
+    width: 22%;
+}
+
+
+.tabla tr:last-child td {
+    border-bottom: none;
+}
+.tabla input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 9px;
+}
+
+/* Archivo adjunto */
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sección de observaciones y firma */
+
+.thrid {
+    margin-top: 30px;
+}
+.thrid label {
+    font-weight: 400;
+    margin-right: 10px;
+}
+.thrid input[type="text"] {
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #f2eaea;
+}
+
+.button {
+    display: block;
+    margin: 30px auto 0 auto;
+    background-color: #7c2c2c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 36px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background-color: #520304;
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: 'Georgia', serif;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    nav a {
+        float: none;
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .fill, .fill-small,
+    input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
+        width: 100%;
+        font-size: 16px;
+    }
+    .space, .space-inline > div,
+    .checkbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

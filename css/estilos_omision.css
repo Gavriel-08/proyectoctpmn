@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f8f0eb;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 15px 30px;
+    border-bottom: 4px solid #7c2c2c;
+    align-items: center;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    position: relative;
+    margin-top: 50px;
+}
+
+img{
+    position: relative;
+    text-align: left;
+    width: 10em;
+
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="date"], input[type="time"], textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    min-width: 150px;
+    outline:transparent;
+}
+
+
+textarea {
+    flex: 2;
+    resize: none;
+    height: 80px;
+}
+
+.instancia {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff;
+}
+
+.button {
+    display: block;
+    margin: 30px auto 0 auto;
+    background-color: #7c2c2c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 36px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+select{
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    border-top: 4px solid #7c2c2c;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    position: sticky;
+    width: 100%;
+}
